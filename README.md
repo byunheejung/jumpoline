@@ -1,5 +1,5 @@
 # jumpoline
-jumpoline
+<!-- jumpoline
 
 
 nodo sass 사용
@@ -16,10 +16,13 @@ node-sass [옵션] <입력파일경로> [출력파일경로]
 
 ```
 node-sass -w src/scss/style.scss src/css/style.css
-```
+``` -->
 
 
 작업 파일 내용
-```
-001 - main.html (햄버거메뉴/메인카테고리 메뉴 기존과 동일)
-```
+1. 001 - main.html (햄버거메뉴**추후작업** 메인카테고리 메뉴 기존과 동일) 
+2. 002 - search.html 
+
+
+
+

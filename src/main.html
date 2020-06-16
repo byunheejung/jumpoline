@@ -15,13 +15,13 @@
         <div class="header">
             <div class="wrap-row">
                 <button type="button" class="btn-menu">메뉴버튼</button>
-                <span class="title">프랜차이즈</span>
+                <strong class="title">프랜차이즈</strong>
                 <a href="#none" class="link-search">검색</a>
             </div>
         </div>
         <div class="main-menu">
             <ul class="list-menu">
-                <li class="on"><a href="#none" class="link-menu">휴게점</a></li>
+                <li class="on"><a href="#none" class="link-menu">휴게점</a></li> <!-- 활성화시 on 클래스 추가 -->
                 <li><a href="#none" class="link-menu link-menu-eatery">음식점</a></li>
                 <li><a href="#none" class="link-menu link-menu-west">쥬류점</a></li>
                 <li><a href="#none" class="link-menu link-menu-ent">오락스포츠</a></li>
@@ -414,8 +414,10 @@
                 </ul>
             </div>
         </div>
-        <div class="banner" style="background-color:#2C1F71;">
-            <img src="img/thumb/group2.png" class="img-thumb" alt="배너이미지">
+        <div class="wrap-banner">
+            <div class="banner" style="background-color:#2C1F71;">  <!-- 슬라이드 배너 배경 색상에 맞게 변경 -->
+                <img src="img/thumb/group2.png" class="img-thumb" alt="배너이미지">
+            </div>
         </div>
         <div class="wrap-search">
             <div class="inp-comm">
@@ -451,97 +453,95 @@
                 </div>
             </div>
         </div>
-        <div class="banner" style="background-color:#fee8ed">
+        <div class="banner" style="background-color:#fee8ed"> <!-- 슬라이드 배너 배경 색상에 맞게 변경 -->
             <img src="img/thumb/group3.png" class="img-thumb" alt="배너이미지">
         </div>
         <div class="wrap-cont-box">
+            <div class="wrap-ad wrap-yellow">최상단 광고</div>
             <div class="wrap-box">
-                <div class="wrap-ad">최상단 광고</div>
-                    <div class="inner-box">
-                        <div class="box-desc">
-                            <div class="set-comm set-comm-typ2">
-                                <input type="checkbox" id="stln" class="inp-check" />
-                                <label For="stln" class="lab-check">
-                                    체크박스
-                                    <span class="ico-check"></span>
-                                </label>
-                            </div>
-                            <div class="thumb60">
-                                <img src="img/thumb/thumb-company.png" width="60" height="60" alt="">
-                            </div>
-                            
+                <div class="inner-box">
+                    <div class="box-desc">
+                        <div class="set-comm set-comm-typ2">
+                            <input type="checkbox" id="stln" class="inp-check" />
+                            <label For="stln" class="lab-check">
+                                체크박스
+                                <span class="ico-check"></span>
+                            </label>
                         </div>
-                        <div class="box-desc">
-                            <div class="box-info">
-                                <span class="text-info">아이템 : <span class="item">편의점,택배&픽업,나만의냉장고</span></span>
-                                <span class="text-info">매물수<span class="text-green">244건</span></span>
-                                <strong class="title">씨유(CU)</strong>
-                                <p class="text-desc">프레쉬한 상품과 서비스로 일상을 리프레쉬! CU가 함께합니다.</p>
-                                <table class="wrap-tbl">
-                                    <caption class="blind">광고 정보</caption>
-                                    <tbody>
-                                        <tr>
-                                            <th>가맹점수</th>
-                                            <td class="item">2999개</td>
-                                            <th>월매출</th>
-                                            <td>2,600만</td>
-                                        </tr>
-                                        <tr>
-                                            <th>창업비용</th>
-                                            <td class="item">5,600만</td>
-                                            <th>창업에이전트</th>
-                                            <td>홍길동</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="thumb60">
+                            <img src="img/thumb/thumb-company.png" width="60" height="60" alt="회사이름">
                         </div>
                     </div>
+                    <div class="box-desc">
+                        <div class="box-info">
+                            <span class="text-info">아이템 : <span class="item">편의점,택배&픽업,나만의냉장고</span></span>
+                            <span class="text-info">매물수<span class="text-green">244건</span></span>
+                            <strong class="title">씨유(CU)</strong>
+                            <p class="text-desc">프레쉬한 상품과 서비스로 일상을 리프레쉬! CU가 함께합니다.</p>
+                            <table class="wrap-tbl">
+                                <caption class="blind">광고 정보</caption>
+                                <tbody>
+                                    <tr>
+                                        <th>가맹점수</th>
+                                        <td>2999개</td>
+                                        <th>월매출</th>
+                                        <td class="item-num">2,600만</td>
+                                    </tr>
+                                    <tr>
+                                        <th>창업비용</th>
+                                        <td><span class="item">5,600만</span> (46㎡ 기준)</td>
+                                        <th>창업에이전트</th>
+                                        <td>홍길동</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="wrap-ad wrap-yellow">최상단 광고</div>
             <div class="wrap-box">
-                <div class="wrap-ad">최상단 광고</div>
-                    <div class="inner-box">
-                        <div class="box-desc">
-                            <div class="set-comm set-comm-typ2">
-                                <input type="checkbox" id="stln" class="inp-check" />
-                                <label For="stln" class="lab-check">
-                                    체크박스
-                                    <span class="ico-check"></span>
-                                </label>
-                            </div>
-                            <div class="thumb60">
-                                <img src="img/thumb/thumb-company.png" width="60" height="60" alt="">
-                            </div>
+                <div class="inner-box">
+                    <div class="box-desc">
+                        <div class="set-comm set-comm-typ2">
+                            <input type="checkbox" id="stln" class="inp-check" />
+                            <label For="stln" class="lab-check">
+                                체크박스
+                                <span class="ico-check"></span>
+                            </label>
                         </div>
-                        <div class="box-desc">
-                            <div class="box-info">
-                                <span class="text-info">아이템 : <span class="item">편의점,택배&픽업,나만의냉장고</span></span>
-                                <span class="text-info">매물수<span class="text-green">244건</span></span>
-                                <strong class="title">씨유(CU)</strong>
-                                <p class="text-desc">프레쉬한 상품과 서비스로 일상을 리프레쉬! CU가 함께합니다.</p>
-                                <table class="wrap-tbl">
-                                    <caption class="blind">광고 정보</caption>
-                                    <tbody>
-                                        <tr>
-                                            <th>가맹점수</th>
-                                            <td class="item">2999개</td>
-                                            <th>월매출</th>
-                                            <td>2,600만</td>
-                                        </tr>
-                                        <tr>
-                                            <th>창업비용</th>
-                                            <td class="item">5,600만</td>
-                                            <th>창업에이전트</th>
-                                            <td>홍길동</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="thumb60">
+                            <img src="img/thumb/thumb-company.png" width="60" height="60" alt="회사이름">
                         </div>
                     </div>
+                    <div class="box-desc">
+                        <div class="box-info">
+                            <span class="text-info">아이템 : <span class="item">편의점,택배&픽업,나만의냉장고</span></span>
+                            <span class="text-info">매물수<span class="text-green">244건</span></span>
+                            <strong class="title">씨유(CU)</strong>
+                            <p class="text-desc">프레쉬한 상품과 서비스로 일상을 리프레쉬! CU가 함께합니다.</p>
+                            <table class="wrap-tbl">
+                                <caption class="blind">광고 정보</caption>
+                                <tbody>
+                                    <tr>
+                                        <th>가맹점수</th>
+                                        <td>2999개</td>
+                                        <th>월매출</th>
+                                        <td class="item-num">2,600만</td>
+                                    </tr>
+                                    <tr>
+                                        <th>창업비용</th>
+                                        <td><span class="item">5,600만</span> (46㎡ 기준)</td>
+                                        <th>창업에이전트</th>
+                                        <td>홍길동</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
    </div>
 </body>
 </html>
