@@ -1,0 +1,25 @@
+{
+  "name": "jumpoline",
+  "version": "1.0.0",
+  "description": "jumpoline",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byunheejung/jumpoline.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/byunheejung/jumpoline/issues"
+  },
+  "homepage": "https://github.com/byunheejung/jumpoline#readme"
+}
