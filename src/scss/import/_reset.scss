@@ -38,6 +38,9 @@ a:active {
 html,body{
     height:100%;
 }
+.wrap{
+    height:100%;
+}
 .img-thumb {
     display:block;
     width:100%;
@@ -50,7 +53,7 @@ button {
     outline: none;
 }
 /* skip navigation */
-#u_skip{position:absolute;z-index:99999}
-#u_skip a{position:absolute;left:0;top:-30px;width:128px;background:url(../../images/customer/sp_u_skip.png) repeat-x 0 -21px;border:1px solid #4ec53d;text-align:center;outline:none}
-#u_skip a:active,#u_skip a:focus{top:0;text-decoration:none;cursor:pointer;zoom:1}
-#u_skip span{display:inline-block;padding:1px 6px 1px 0;background:url(../../images/customer/sp_u_skip.png) no-repeat 100% 11px;font-size:11px;letter-spacing:-1px;color:#fff;line-height:26px}
+// #u_skip{position:absolute;z-index:99999}
+// #u_skip a{position:absolute;left:0;top:-30px;width:128px;background:url(../../images/customer/sp_u_skip.png) repeat-x 0 -21px;border:1px solid #4ec53d;text-align:center;outline:none}
+// #u_skip a:active,#u_skip a:focus{top:0;text-decoration:none;cursor:pointer;zoom:1}
+// #u_skip span{display:inline-block;padding:1px 6px 1px 0;background:url(../../images/customer/sp_u_skip.png) no-repeat 100% 11px;font-size:11px;letter-spacing:-1px;color:#fff;line-height:26px}
