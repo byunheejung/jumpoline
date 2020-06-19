@@ -52,7 +52,7 @@ html, body {
   height: 100%; }
 
 .wrap {
-  height: 100%; }
+  margin-bottom: 100px; }
 
 .img-thumb {
   display: block;
@@ -1147,6 +1147,48 @@ button {
 .wrap-box + .wrap-box {
   margin-top: 7px; }
 
+.cont {
+  padding-bottom: 90px; }
+
+.slide {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap; }
+  .slide img {
+    display: block;
+    width: 100%; }
+  .slide .inner-slide {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap; }
+  .slide .btn-prev {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, -50%);
+    background: url(../img/icon-arrow-prev.png);
+    background-size: 20px 20px; }
+  .slide .btn-next {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+    background: url(../img/icon-arrow-next.png);
+    background-size: 20px 20px; }
+  .slide .num-page {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 6px;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff; }
+
 .slide-info {
   padding: 10px 16px;
   border-bottom: 6px solid #f3f3f3; }
@@ -1157,6 +1199,12 @@ button {
     -ms-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
+  .slide-info .text-info {
+    padding-left: 10px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000;
+    font-weight: bold; }
 
 .info-text {
   padding: 12px 18px; }
@@ -1305,9 +1353,23 @@ button {
   background-color: #7bb603; }
   .wrap-link .link-text {
     flex: 1;
+    line-height: 30px;
     font-size: 16px;
     align-self: center;
     color: #fff;
     text-align: center; }
   .wrap-link .link-text + .link-text {
     border-left: 1px solid #fff; }
+
+.tit_intro {
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+  border-bottom: 1px solid #f3f3f3; }
+
+.view-info {
+  padding: 17px 20px; }
+  .view-info .inner-view {
+    height: 180px;
+    background-color: #000; }
