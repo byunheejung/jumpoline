@@ -9,11 +9,13 @@
 </head>
 <body>
    <div class="wrap">
-        <div class="header">
-            <div class="wrap-row">
-                <button type="button" class="btn-back">뒤로가기</button>
-                <span class="search-text">커피점 프랜차이즈</span>
-                <a href="#none" class="link-search">검색</a>
+        <div class="wrap-header"> <!-- 고정시 fixed 클래스 추가 -->
+            <div class="header">
+                <div class="wrap-row">
+                    <button type="button" class="btn-back">뒤로가기</button>
+                    <span class="search-text">탐앤탐스커피</span>
+                    <a href="#none" class="link-search">검색</a>
+                </div>
             </div>
         </div>
         <div class="slide">
@@ -38,25 +40,32 @@
                 <span class="text-info">탐앤탐스(TOM N TOMS)</span>
             </div>
         </div>
-        <ul class="list-tab">
-            <li><a href="/none"  class="link-tab">개요</a></li>
-            <li><a href="/none" class="link-tab">가맹점소개</a></li>
-            <li class="on"><a href="/none" class="link-tab">동영상</a></li>
-            <li><a href="/none" class="link-tab">이미지</a></li>
-            <li><a href="/none" class="link-tab">정보공개서</a></li>
-            <li><a href="/none" class="link-tab">에이전트</a></li>
-            <li><a href="/none" class="link-tab">블로그 리뷰</a></li>
-            <li><a href="/none" class="link-tab">가맹점 지도</a></li>
-            <li><a href="/none" class="link-tab">가맹점 매물</a></li>
-            <li><a href="/none" class="link-tab">댓글</a></li>
-        </ul>
+        <div class="box"></div>
+        <div class="wrap-list-tab">
+            <div class="inner-tab">
+                <ul class="list-tab">
+                    <li><a href="/none"  class="link-tab">개요</a></li>
+                    <li><a href="/none" class="link-tab">가맹점소개</a></li>
+                    <li class="on"><a href="/none" class="link-tab">동영상</a></li>
+                    <li><a href="/none" class="link-tab">이미지</a></li>
+                    <li><a href="/none" class="link-tab">정보공개서</a></li>
+                    <li><a href="/none" class="link-tab">에이전트</a></li>
+                    <li><a href="/none" class="link-tab">블로그 리뷰</a></li>
+                    <li><a href="/none" class="link-tab">가맹점 지도</a></li>
+                    <li><a href="/none" class="link-tab">가맹점 매물</a></li>
+                    <li><a href="/none" class="link-tab">댓글</a></li>
+                </ul>
+                <button type="button" class="btn">다음</button>
+                <button type="button" class="btn btn-prev">이전</button>
+            </div>
+        </div>
         <div class="cont">
             <div class="tit_intro">
                 탐앤탐스커피 동영상
             </div>
             <div class="view-info">
-                <div class="inner-view">
-                  
+                <div class="inner-view" style="background-color:#000">
+                    <!-- 동영상적용시 백그라운드컬러 삭제 -->
                 </div>
             </div>
         </div>

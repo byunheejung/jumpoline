@@ -12,11 +12,13 @@
         <div class="banner" style="background-color: #dadcf5;">  <!-- 슬라이드 배너 배경 색상에 맞게 변경 -->
             <img src="img/thumb/group.png" class="img-thumb" alt="배너이미지" />
         </div>
-        <div class="header">
-            <div class="wrap-row">
-                <button type="button" class="btn-back">뒤로가기</button>
-                <span class="search-text">커피점 프랜차이즈</span>
-                <a href="#none" class="link-search">검색</a>
+        <div class="wrap-header"> <!-- 고정시 fixed 클래스 추가 -->
+            <div class="header">
+                <div class="wrap-row">
+                    <button type="button" class="btn-back">뒤로가기</button>
+                    <span class="search-text">커피점 프랜차이즈</span>
+                    <a href="#none" class="link-search">검색</a>
+                </div>
             </div>
         </div>
         <div class="wrap-banner">
@@ -24,52 +26,56 @@
                 <img src="img/thumb/group2.png" class="img-thumb" alt="배너이미지" />
             </div>
         </div>
-        <div class="wrap-search">
-            <div class="inp-comm">
-                <div class="inp-inner">
-                    <input type="text" id="text" class="inp" name="text" placeholder="프랜차이즈 검색" />
-                    <button type="button" class="btn-search">
-                        <span class="ico-search">검색</span>
-                    </button>
+        <div class="wrap-item-fixed"><!-- 고정시 fixed 클래스 추가 -->
+            <div class="item-fixed">
+                <div class="wrap-search">
+                    <div class="inp-comm">
+                        <div class="inp-inner">
+                            <input type="text" id="text" class="inp" name="text" placeholder="프랜차이즈 검색" />
+                            <button type="button" class="btn-search">
+                                <span class="ico-search">검색</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="wrap-cont-view">
-            <div class="wrap-row">
-                <div class="set-comm set-comm-typ2">
-                    <input type="checkbox" id="stln" class="inp-check" />
-                    <label For="stln" class="lab-check">
-                        체크박스
-                        <span class="ico-check"></span>
-                    </label>
+                <div class="wrap-cont-view">
+                    <div class="wrap-row">
+                        <div class="set-comm set-comm-typ2">
+                            <input type="checkbox" id="stln" class="inp-check" />
+                            <label For="stln" class="lab-check">
+                                체크박스
+                                <span class="ico-check"></span>
+                            </label>
+                        </div>
+                        <a href="/none" class="link-view">선택사항보기</a>
+                        <span class="text-desc">전체 프랜차이즈 5,800건</span>
+                    </div>
                 </div>
-                <a href="/none" class="link-view">선택사항보기</a>
-                <span class="text-desc">전체 프랜차이즈 5,800건</span>
-            </div>
-        </div>
-        <div class="wrap-sort">
-            <div class="wrap-row">
-                <em class="desc">광고순</em>
-                <button type="button" class="btn-sort down"><!-- 높을시 up 클래스 추가 낮을시 down 클래스 추가 -->
-                    <span class="icon-up"></span>
-                    <span class="text">매물순</span>
-                    <span class="icon-down"></span>
-                </button>
-                <button type="button" class="btn-sort">
-                    <span class="icon-up"></span>
-                    <span class="text">조회순</span>
-                    <span class="icon-down"></span>
-                </button>
-                <button type="button" class="btn-sort">
-                    <span class="icon-up"></span>
-                    <span class="text">가맹점순</span>
-                    <span class="icon-down"></span>
-                </button>
-                <button type="button" class="btn-sort">
-                    <span class="icon-up"></span>
-                    <span class="text">월매출순</span>
-                    <span class="icon-down"></span>
-                </button>
+                <div class="wrap-sort">
+                    <div class="wrap-row">
+                        <em class="desc">광고순</em>
+                        <button type="button" class="btn-sort down"><!-- 높을시 up 클래스 추가 낮을시 down 클래스 추가 -->
+                            <span class="icon-up"></span>
+                            <span class="text">매물순</span>
+                            <span class="icon-down"></span>
+                        </button>
+                        <button type="button" class="btn-sort">
+                            <span class="icon-up"></span>
+                            <span class="text">조회순</span>
+                            <span class="icon-down"></span>
+                        </button>
+                        <button type="button" class="btn-sort">
+                            <span class="icon-up"></span>
+                            <span class="text">가맹점순</span>
+                            <span class="icon-down"></span>
+                        </button>
+                        <button type="button" class="btn-sort">
+                            <span class="icon-up"></span>
+                            <span class="text">월매출순</span>
+                            <span class="icon-down"></span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="wrap-desc">
@@ -120,12 +126,13 @@
                         <div class="thumb60">
                             <img src="img/thumb/thumb-company.png" width="60" height="60" alt="회사이름" />
                         </div>
-                        
                     </div>
                     <div class="box-desc">
                         <div class="box-info">
-                            <span class="text-info">아이템 : <span class="item">편의점,택배&픽업,나만의냉장고</span></span>
-                            <span class="text-info">매물수<span class="text-green">244건</span></span>
+                            <div class="wrap-row">
+                                <span class="text-info">아이템 : <span class="item">편의점,택배&픽업,나만의냉장고</span></span>
+                                <span class="text-info">매물수<span class="text-green">244건</span></span>
+                            </div>
                             <strong class="title">씨유(CU)</strong>
                             <p class="text-desc">프레쉬한 상품과 서비스로 일상을 리프레쉬! CU가 함께합니다.</p>
                             <table class="wrap-tbl">
@@ -166,8 +173,10 @@
                     </div>
                     <div class="box-desc">
                         <div class="box-info">
-                            <span class="text-info">아이템 : <span class="item">편의점,택배&픽업,나만의냉장고</span></span>
-                            <span class="text-info">매물수<span class="text-green">244건</span></span>
+                            <div class="wrap-row">
+                                <span class="text-info">아이템 : <span class="item">편의점,택배&픽업,나만의냉장고</span></span>
+                                <span class="text-info">매물수<span class="text-green">244건</span></span>
+                            </div>
                             <strong class="title">씨유(CU)</strong>
                             <p class="text-desc">프레쉬한 상품과 서비스로 일상을 리프레쉬! CU가 함께합니다.</p>
                             <table class="wrap-tbl">
@@ -208,8 +217,10 @@
                     </div>
                     <div class="box-desc">
                         <div class="box-info">
-                            <span class="text-info">아이템 : <span class="item">편의점,택배&픽업,나만의냉장고</span></span>
-                            <span class="text-info">매물수<span class="text-green">244건</span></span>
+                            <div class="wrap-row">
+                                <span class="text-info">아이템 : <span class="item">편의점,택배&픽업,나만의냉장고</span></span>
+                                <span class="text-info">매물수<span class="text-green">244건</span></span>
+                            </div>
                             <strong class="title">씨유(CU)</strong>
                             <p class="text-desc">프레쉬한 상품과 서비스로 일상을 리프레쉬! CU가 함께합니다.</p>
                             <table class="wrap-tbl">
@@ -255,8 +266,10 @@
                     </div>
                     <div class="box-desc">
                         <div class="box-info">
-                            <span class="text-info">아이템 : <span class="item">편의점,택배&픽업,나만의냉장고</span></span>
-                            <span class="text-info">매물수<span class="text-green">244건</span></span>
+                            <div class="wrap-row">
+                                <span class="text-info">아이템 : <span class="item">편의점,택배&픽업,나만의냉장고</span></span>
+                                <span class="text-info">매물수<span class="text-green">244건</span></span>
+                            </div>
                             <strong class="title">씨유(CU)</strong>
                             <p class="text-desc">프레쉬한 상품과 서비스로 일상을 리프레쉬! CU가 함께합니다.</p>
                             <table class="wrap-tbl">

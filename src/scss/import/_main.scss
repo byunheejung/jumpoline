@@ -1,4 +1,22 @@
 
+// .fixed{
+//     position: fixed;
+//     left:0;
+//     top:0;
+//     z-index: 99;
+// }
+.wrap-header.fixed{
+    height:55px;
+    .header{
+        position: fixed;
+        top:0;
+        left:0;
+        width:100%;
+        z-index: 99;
+        background-color:#fff;
+        box-sizing: border-box;
+    }
+}
 .header{
     .wrap-row{
         @include align-items(center);
@@ -23,16 +41,16 @@
         text-indent: -9999px;
     }
     .title{
+        @include ellipse-one(100%);
         padding-left:12px;
         line-height:16px;
-        @include ellipse-one(100%);
     }
     .search-text{
+        @include ellipse-one(100%);
         font-size:16px;
         padding-left:12px;
         line-height:20px;
         font-weight:bold;
-        @include ellipse-one(100%);
     }
     .link-search{
         display:block;
@@ -60,7 +78,7 @@
     }
     .text-desc{
         padding-left:8px;
-        font-size:10px;
+        font-size:11px;
         color:#000;
         font-weight:bold;
     }
@@ -73,12 +91,12 @@
     }
     .desc{
         font-weight:bold;
-        font-size:10px;
+        font-size:11px;
     }
     .btn-sort{
         .text{
             vertical-align: middle;
-            font-size:10px;
+            font-size:12px;
         }
         .icon-up{
             display:inline-block;
@@ -126,9 +144,9 @@
     background-repeat: no-repeat;
     background-position: center center;
     .wrap-row{
+        @include align-items(center);
         padding:0 16px;
         height:30px;
-        @include align-items(center);
     }
     .text-add{
         font-size:14px;
@@ -165,12 +183,12 @@
             width:100%;
             height:100%;
             border-radius: 3px;
-            font-size:10px;
+            font-size:11px;
             color: #dae7b8;
             text-decoration: none;
             &:before{
-                content: '';
                 display:block;
+                content: '';
                 margin:0 auto;
                 width:20px;
                 height:22px;
@@ -230,7 +248,7 @@
             color: #5f9408;
             text-align: center;
             &:before{
-                background-position:-25px 5px
+                background-position:-25px 5px;
             }
         }
     }
@@ -241,10 +259,10 @@
     white-space: nowrap;
 }
 .list-cont{
-    @include flexbox();
     display:inline-flex;
     width:100%;
     flex-wrap: wrap;
+    // @include flexbox();
     li{
         width:20%;
         margin-bottom:10px;
@@ -570,18 +588,28 @@
         }
     }
 }
-
-
-
+.wrap-item-fixed.fixed{
+    height:132px;
+    .item-fixed{
+        position: fixed;
+        top:0;
+        left:0;
+        width:100%;
+        z-index: 99;
+        background-color:#fff;
+        box-sizing: border-box;
+    }
+}
 .wrap-search{
+    position: relative;
     padding:5px 16px;
     .inp-comm{
         background-color:$line-grey;
         border:0 none;
     }
     .ico-search{
-        margin:0 auto;
         display: block;
+        margin:0 auto;
         width:22px;
         height:21px;
         background-image:url(../img/icon-search3.png);
@@ -606,10 +634,10 @@
         font-weight:bold;
     }
     .link-more{
-        font-size:10px;
+        font-size:11px;
         &:after{
-            content: '';
             display:inline-block;
+            content: '';
             width:7px;
             height:12px;
             margin-left:4px;
@@ -631,15 +659,25 @@
         text-align:center;
         color:#fff;
         &:after{
-            content: '';
             position: absolute;
             top:0;
             left:0;
+            content: '';
             width:22px;
             height:27px;
             background-image:url(../img/icon-medal-gold.png);
             background-size:22px 27px;
             z-index: -1;
+        }
+        &.icon-num-type2{
+            &:after{
+                background-image:url(../img/icon-medal-silver.png);
+            }
+        }
+        &.icon-num-type3{
+            &:after{
+                background-image:url(../img/icon-medal-bronze.png);
+            }
         }
     }
     .info-desc{
@@ -650,7 +688,7 @@
         }
         .desc-item{
             padding-top:6px;
-            font-size:9px;
+            font-size:11px;
             color:$text-grey;
         }
     }
@@ -661,13 +699,13 @@
             font-weight:bold;
             .item{
                 padding-lefT:4px;
-                font-size:10px;
+                font-size:11px;
                 color:$text-grey;
             }
         }
         .text-desc{
             display:block;
-            font-size:10px;
+            font-size:11px;
             color:#000;
         }
         .text-num{
@@ -679,14 +717,17 @@
         }
     }
 }
+.wrap-info + .wrap-info{
+    border-top:1px solid $line-grey;
+}
 .wrap-cont-box{
-    background:#eee;
+    background:$line-grey;
 }
 .wrap-box{
     .inner-box{
-        position: relative;
         @include flexbox();
-        padding:8px 16px;
+        position: relative;
+        padding:8px 7px;
         background-color:#fff;
         border:1px solid #dedede;
     }
@@ -695,6 +736,30 @@
     }
     .box-desc{
         width:60px;
+        .title-box{
+            width: 69px;
+            height: 20px;
+            background-color: #ecb82f;
+            text-align:center;
+            color:#fff;
+            font-size:10px;
+            line-height:20px;
+            .item{
+                border:1px solid #fff;
+            }
+        }
+        .title-box-green{
+            background-color: #55b68f;
+        }
+        .desc-box{
+            display:block;
+            width: 69px;
+            height: 16px;
+            margin-top:2px;
+            border: solid 1px #dedede;
+            line-height:16px;
+            text-align:center;
+        }
     }
     .box-desc + .box-desc{
         position: relative;
@@ -702,8 +767,7 @@
         padding-left:8px;
     }
         .text-info{
-            @include ellipse-one(80%);
-            display:inline-block;
+            @include ellipse-one(70%);
             color:$text-grey;
             .item{
                 color:#000;
@@ -713,29 +777,58 @@
                 padding-left:4px;
                 color:$green;
             }
-        }
-        .text-info + .text-info{
-            position: absolute;
-            top:0;
-            right:0;
-            width:inherit;
+            &:last-child{
+                width:inherit;
+                margin-left:auto;
+                text-overflow: initial;
+            }
         }
         .title{
             display:block;
             margin-top:5px;
+            font-size:12px;
         }
         .text-desc{
-            font-size:9px;
+            // font-size:9px;
         }
     .box-info + .box-info{
         padding-left:8px;
     }
+    .text-desc{
+        padding-top:4px;
+        font-size:11px;
+        .text + .text{
+            &:before{
+                display:inline-block;
+                content:'';
+                width:1px;
+                height:9px;
+                margin:0 7px;
+                background-color:#dfdfdf;
+                vertical-align: middle;
+            }
+        }
+    }
+    .wrap-info-desc{
+        margin-top:2px;
+        padding-top:5px;
+        border-top:1px solid #dedede;
+        .desc{
+            padding-right:8px;
+        }
+    }
+    .color-orange{
+        color:$text-red;
+    }
+    .color-blue{
+        color:#041998;
+    }
+    
 }
 .wrap-ad{
     padding:5px 0 5px 16px;
     background-color:#d7ac02;
     color:#fff;
-    font-size:10px;
 }
 .wrap-box + .wrap-ad{
     margin-top:6px;
@@ -760,14 +853,15 @@
     tbody{
         color:$text-grey;
         th{
-            width:64px;
-            font-size:10px;
+            width:61px;
             text-align:left;
             font-weight:normal;
         }
         td{
             padding-right:10px;
-            font-size:10px;
+            &:last-child{
+                padding-right:0;
+            }
         }
         .item-num{
             color:#110b46;
@@ -775,7 +869,6 @@
         .item{
             padding:0;
             padding-right:4px;
-            color:$text-red;
             // .item-desc{
             //     padding:0;
             //     color:$text-grey;

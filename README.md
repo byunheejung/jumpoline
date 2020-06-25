@@ -20,11 +20,16 @@ node-sass -w src/scss/style.scss src/css/style.css
 
 
 작업 파일 내용
-1. 001 - main.html (햄버거메뉴**추후작업** 메인카테고리 메뉴 기존과 동일) 
-2. 002 - search.html 
-3. 003-1 - search-summary.html
-4. 003-2 -intro.html
-5. 003-3 -video.html
+1. 001 - main.html (햄버거메뉴 기존꺼 사용) **완료**
+2. 002 - search.html **완료**
+3. 003-1 - search-summary.html **완료**
+4. 003-2 - intro.html **완료**
+5. 003-3 - video.html **완료**
+6. 003-4 - images.html **완료**
+7. 003-5 - information.html **완료**
+8. 003-6 - agent.html **완료**
+9. 003-7 - blog.html **완료**
+10. 003-8 - store.html **완료**
 
 
 

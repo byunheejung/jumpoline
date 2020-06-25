@@ -4,7 +4,7 @@ body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,inpu
     padding:0
 }
 body,input,textarea,select,button,table {
-    font-family:Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-family:'Malgun Gothic','맑은 고딕','Droid Sans','AppleSDGothicNeo','돋움', Dotum, Helvetica, sans-serif;
     font-size:12px;
     color:$text-grey;
 }
@@ -40,7 +40,7 @@ html,body{
 }
 .wrap{
     // height:100%;
-    margin-bottom:100px;
+    // margin-bottom:100px;
 }
 .img-thumb {
     display:block;
