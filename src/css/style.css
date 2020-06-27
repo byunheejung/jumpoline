@@ -1003,7 +1003,26 @@ button {
     margin-left: auto;
     text-overflow: initial; }
 
+.wrap-box .icon-view {
+  position: absolute;
+  top: 18px;
+  right: 0; }
+  .wrap-box .icon-view:before {
+    display: inline-block;
+    content: '';
+    width: 12px;
+    height: 12px;
+    padding-right: 4px;
+    background: url(../img/icon-view.png);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    vertical-align: middle; }
+
 .wrap-box .title {
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   display: block;
   margin-top: 5px;
   font-size: 12px; }

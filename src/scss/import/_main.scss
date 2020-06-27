@@ -783,7 +783,24 @@
                 text-overflow: initial;
             }
         }
+        .icon-view{
+            position: absolute;
+            top:18px;
+            right:0;
+            &:before{
+                display:inline-block;
+                content:'';
+                width: 12px;
+                height:12px;
+                padding-right:4px;
+                background:url(../img/icon-view.png);
+                background-size:12px 12px;
+                background-repeat: no-repeat;
+                vertical-align: middle;
+            }
+        }
         .title{
+            @include ellipse-one(80%);
             display:block;
             margin-top:5px;
             font-size:12px;
