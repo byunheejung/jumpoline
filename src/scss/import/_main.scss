@@ -713,6 +713,7 @@
             margin-top:3px;
             font-size:18px;
             color:$green;
+            font-weight: bold;
             text-decoration: underline;
         }
     }
@@ -776,17 +777,22 @@
             .text-green{
                 padding-left:4px;
                 color:$green;
+                font-weight: bold;
             }
             &:last-child{
                 width:inherit;
                 margin-left:auto;
                 text-overflow: initial;
             }
+            &.store-cnt{
+                font-size:11px;
+            }
         }
         .icon-view{
             position: absolute;
             top:18px;
             right:0;
+            font-size: 11px;
             &:before{
                 display:inline-block;
                 content:'';

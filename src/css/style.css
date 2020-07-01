@@ -941,6 +941,7 @@ button {
       margin-top: 3px;
       font-size: 18px;
       color: #568000;
+      font-weight: bold;
       text-decoration: underline; }
 
 .wrap-info + .wrap-info {
@@ -1002,16 +1003,20 @@ button {
     font-weight: bold; }
   .wrap-box .text-info .text-green {
     padding-left: 4px;
-    color: #568000; }
+    color: #568000;
+    font-weight: bold; }
   .wrap-box .text-info:last-child {
     width: inherit;
     margin-left: auto;
     text-overflow: initial; }
+  .wrap-box .text-info.store-cnt {
+    font-size: 11px; }
 
 .wrap-box .icon-view {
   position: absolute;
   top: 18px;
-  right: 0; }
+  right: 0;
+  font-size: 11px; }
   .wrap-box .icon-view:before {
     display: inline-block;
     content: '';
