@@ -818,6 +818,7 @@
         padding-left:8px;
     }
     .text-desc{
+        @include ellipse-one(100%);
         padding-top:4px;
         font-size:11px;
         .text + .text{
@@ -876,7 +877,7 @@
     tbody{
         color:$text-grey;
         th{
-            width:61px;
+            width:45px;
             text-align:left;
             font-weight:normal;
         }
@@ -884,6 +885,9 @@
             padding-right:10px;
             &:last-child{
                 padding-right:0;
+            }
+            &.row2{
+                font-size:11px;
             }
         }
         .item-num{

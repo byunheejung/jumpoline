@@ -1041,6 +1041,10 @@ button {
   padding-left: 8px; }
 
 .wrap-box .text-desc {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   padding-top: 4px;
   font-size: 11px; }
   .wrap-box .text-desc .text + .text:before {
@@ -1091,13 +1095,15 @@ button {
 .wrap-tbl tbody {
   color: #5e5e5e; }
   .wrap-tbl tbody th {
-    width: 61px;
+    width: 45px;
     text-align: left;
     font-weight: normal; }
   .wrap-tbl tbody td {
     padding-right: 10px; }
     .wrap-tbl tbody td:last-child {
       padding-right: 0; }
+    .wrap-tbl tbody td.row2 {
+      font-size: 11px; }
   .wrap-tbl tbody .item-num {
     color: #110b46; }
   .wrap-tbl tbody .item {
