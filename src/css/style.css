@@ -613,7 +613,7 @@ button {
 .header .btn-back {
   display: block;
   width: 20px;
-  height: 16px;
+  height: 18px;
   background-image: url(../img/icon-back.png);
   background-repeat: no-repeat;
   background-size: 20px 18px;
@@ -664,6 +664,7 @@ button {
     border-radius: 2px;
     border: solid 1px #dedede; }
   .wrap-cont-view .text-desc {
+    margin-left: auto;
     padding-left: 8px;
     font-size: 11px;
     color: #000;
@@ -683,31 +684,32 @@ button {
     font-size: 11px; }
   .wrap-sort .btn-sort .text {
     vertical-align: middle;
-    font-size: 12px; }
+    font-size: 12px;
+    padding: 0 5px; }
   .wrap-sort .btn-sort .icon-up {
     display: inline-block;
-    width: 5px;
-    height: 4px;
+    width: 7px;
+    height: 5px;
     background: url(../img/icon-arrow-up.png);
-    background-size: 5px 4px;
+    background-size: 7px 5px;
     vertical-align: middle; }
   .wrap-sort .btn-sort .icon-down {
     display: inline-block;
-    width: 5px;
-    height: 4px;
+    width: 7px;
+    height: 5px;
     background: url(../img/icon-arrow-down.png);
-    background-size: 5px 4px;
+    background-size: 7px 5px;
     vertical-align: middle; }
   .wrap-sort .btn-sort.up .text {
     font-weight: bold; }
   .wrap-sort .btn-sort.up .icon-up {
     background: url(../img/icon-arrow-upOn.png);
-    background-size: 5px 4px; }
+    background-size: 7px 5px; }
   .wrap-sort .btn-sort.down .text {
     font-weight: bold; }
   .wrap-sort .btn-sort.down .icon-down {
     background: url(../img/icon-arrow-downOn.png);
-    background-size: 5px 4px; }
+    background-size: 7px 5px; }
 
 .wrap-add {
   margin: 0 auto;
