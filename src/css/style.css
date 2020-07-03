@@ -1035,7 +1035,8 @@ button {
   white-space: nowrap;
   display: block;
   margin-top: 5px;
-  font-size: 12px; }
+  font-size: 12px;
+  color: #000; }
 
 .wrap-box .box-info + .box-info {
   padding-left: 8px; }
@@ -1105,10 +1106,12 @@ button {
     .wrap-tbl tbody td.row2 {
       font-size: 11px; }
   .wrap-tbl tbody .item-num {
-    color: #110b46; }
+    color: #110b46;
+    font-weight: bold; }
   .wrap-tbl tbody .item {
     padding: 0;
-    padding-right: 4px; }
+    padding-right: 4px;
+    font-weight: bold; }
 
 .wrap-box + .wrap-add {
   margin-top: 7px; }
